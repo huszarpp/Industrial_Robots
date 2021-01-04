@@ -22,13 +22,13 @@ public class Store {
         System.out.println(this.toString());
 
         for (Robot robot : robots) {
-            System.out.println(robot.getName() + " BEFORE delivery:");
+            System.out.println(robot.getName() + " BEFORE the day:");
             System.out.println(robot.toString());
 
             robot.workForOneDay(waitingItems, batteryCharge);
             waitingItems -= robot.getCurrentLoad();
 
-            System.out.println(robot.getName() + " AFTER delivery:");
+            System.out.println(robot.getName() + " AFTER the day:");
             System.out.println(robot.toString());
         }
 
